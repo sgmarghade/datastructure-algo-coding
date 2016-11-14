@@ -1,4 +1,4 @@
-package com.sgmarghade.dsalgo;
+package com.sgmarghade.dsalgo.dp;
 
 /**
  * Created by swapnil on 11/11/16.
