@@ -7,6 +7,11 @@
 4. Ways to N floor problem (Order is fixed).
 5. Ways to N floor problem (Order is not fixed.)
 
+### LinkedList
+1. Singly Linked List.
+2. Doubly Linked List.
+3. Circular Linked List.
+
 ### Dynamic Programming (DP)
 1. Chess problem :  Given Metrics find out if row,col cell is reachable by knight (horse) from 0,0 cell.
 2. Flip bits in array and display maximum number of 1 you can have in the array. 
