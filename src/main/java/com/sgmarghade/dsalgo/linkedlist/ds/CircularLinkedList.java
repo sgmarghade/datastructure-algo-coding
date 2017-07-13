@@ -1,4 +1,4 @@
-package com.sgmarghade.dsalgo.linkedlist;
+package com.sgmarghade.dsalgo.linkedlist.ds;
 
 import java.util.Scanner;
 

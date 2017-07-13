@@ -1,4 +1,4 @@
-package com.sgmarghade.dsalgo.linkedlist;
+package com.sgmarghade.dsalgo.linkedlist.ds;
 
 public class Node {
     public String data;

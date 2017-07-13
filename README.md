@@ -11,6 +11,7 @@
 1. Singly Linked List.
 2. Doubly Linked List.
 3. Circular Linked List.
+3. 
 
 ### Dynamic Programming (DP)
 1. Chess problem :  Given Metrics find out if row,col cell is reachable by knight (horse) from 0,0 cell.
