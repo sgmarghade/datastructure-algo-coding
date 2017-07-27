@@ -1,7 +1,7 @@
 package com.sgmarghade.dsalgo.linkedlist.algo;
 
 import com.sgmarghade.dsalgo.linkedlist.ds.Node;
-
+import com.sgmarghade.dsalgo.linkedlist.utils.LinkedListUtils;
 /**
  * Magic happens in revereseLinkedList function.
  */
@@ -11,13 +11,13 @@ public class ReverseLinkedListIterativeMethod {
     }
 
     private void run() {
-        Node head = createLinkedList();
+        Node head = LinkedListUtils.getInstance().createSinglyLinkedList(10, 0, 1);
         System.out.println("Input linked list.");
-        printLinkedList(head);
+        LinkedListUtils.getInstance().printSinglyLinkedList(head);
 
         head = revereseLinkedList(head);
         System.out.println("\n\nNew linked list");
-        printLinkedList(head);
+        LinkedListUtils.getInstance().printSinglyLinkedList(head);
     }
 
     //All magic happens here..
@@ -37,29 +37,4 @@ public class ReverseLinkedListIterativeMethod {
         return head;
     }
 
-    private void printLinkedList(Node head) {
-        while(head != null) {
-            System.out.print(head.data + " -- ");
-            head = head.next;
-        }
-    }
-
-    private Node createLinkedList() {
-        Node head = null;
-        for(int i = 0; i < 10; i++) {
-           Node newNode = new Node(i+"");
-           if(head == null) {
-               head = newNode;
-           }else {
-               Node current = head;
-               while(current.next != null) {
-                   current = current.next;
-               }
-
-               current.next = newNode;
-           }
-        }
-
-        return head;
-    }
 }
