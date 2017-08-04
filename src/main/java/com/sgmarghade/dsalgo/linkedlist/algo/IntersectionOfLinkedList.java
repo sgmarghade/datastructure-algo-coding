@@ -12,6 +12,9 @@ import java.util.Map;
  * List b -> 9,0,4,5,6,7
  *
  * In Above example list is merged at node value 4
+ *
+ * TimeComplexity : O(m+n)
+ * SpaceComplexity: O(m)
  */
 public class IntersectionOfLinkedList {
     public static void main(String[] args) {
