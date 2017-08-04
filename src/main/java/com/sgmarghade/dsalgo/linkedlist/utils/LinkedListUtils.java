@@ -38,4 +38,22 @@ public class LinkedListUtils {
 
         return head;
     }
+
+    public Node createSinglyLinkedListFromArray(int[] array) {
+        Node head = null;
+        for(int i = 0; i < array.length; i++) {
+            Node newNode = new Node(array[i] + "");
+            if(head == null) {
+                head = newNode;
+            }else {
+                Node current = head;
+                while(current.next != null) {
+                    current = current.next;
+                }
+
+                current.next = newNode;
+            }
+        }
+        return head;
+    }
 }

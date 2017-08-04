@@ -3,6 +3,10 @@ package com.sgmarghade.dsalgo.linkedlist.algo;
 import com.sgmarghade.dsalgo.linkedlist.ds.Node;
 import com.sgmarghade.dsalgo.linkedlist.utils.LinkedListUtils;
 
+/**
+ * Time complexity O(n)
+ * Space complexity O(n)
+ */
 public class MergeSortedLinkedList {
     public static void main(String[] args) {
 
