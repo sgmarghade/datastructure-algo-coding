@@ -18,6 +18,7 @@
     3. Merge two sorted Linked list.
     4. Intersection of Linked list
     5. Detect Loop in Linked list
+    6. LRU (Least recently used cache implementation)
 
 ### Dynamic Programming (DP)
 1. Chess problem :  Given Metrics find out if row,col cell is reachable by knight (horse) from 0,0 cell.
