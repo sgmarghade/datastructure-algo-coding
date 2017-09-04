@@ -1,4 +1,4 @@
-package com.sgmarghade.dsalgo.linkedlist.algo.array;
+package com.sgmarghade.dsalgo.array.algo;
 
 /**
  * There are 2 optimised way to solve this problem.
@@ -40,6 +40,7 @@ public class FrequencyOfElementInArray {
     }
 
     private void run() {
+        System.out.println("bc".substring(0));
         int []input = {1,4,5,2,6,2,5,3,2,5}; //Array of 10. so n = 10
 
         //Step1 : reduce value of each element by 1 so that values will be from 0 to n-1 i.e. 0 to 9, this is for simplicity.
