@@ -8,6 +8,10 @@ import java.util.Set;
  * subString(0,0) of string returns empty string.
  * subString(0,3) returns string from 0 index and total 3 chards
  * subString(3) return string 3 char onwards means from 4th char.
+ *
+ *
+ * For last char d we call getPermutations with empty string which return hash with empty string as value.
+ *
  */
 public class PurmutationOfString {
     public static void main(String[] args) {
