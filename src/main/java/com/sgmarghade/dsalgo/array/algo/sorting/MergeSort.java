@@ -47,26 +47,26 @@ public class MergeSort {
                 rightArray[i] = inputs[i + mid + 1];
             }
 
-            int i = 0;
-            int j = 0;
+            int rightArrayIndex = 0;
+            int leftArrayIndex = 0;
 
             //Basic comparison of sorted array and copying element to existing array.
             for(int currentInputIndex = start; currentInputIndex <= end; currentInputIndex++) {
-                if(i >= leftArray.length) {
-                    //Coppy all j elements.
-                    inputs[currentInputIndex] = rightArray[j];
-                    j++;
-                }else if(j >= rightArray.length) {
-                    //Copy all i elements
-                    inputs[currentInputIndex] = leftArray[i];
-                    i++;
+                if(rightArrayIndex >= leftArray.length) {
+                    //Coppy all leftArrayIndex elements.
+                    inputs[currentInputIndex] = rightArray[leftArrayIndex];
+                    leftArrayIndex++;
+                }else if(leftArrayIndex >= rightArray.length) {
+                    //Copy all rightArrayIndex elements
+                    inputs[currentInputIndex] = leftArray[rightArrayIndex];
+                    rightArrayIndex++;
 
-                }else if(leftArray[i] < rightArray[j]) {
-                    inputs[currentInputIndex] = leftArray[i];
-                    i++;
+                }else if(leftArray[rightArrayIndex] < rightArray[leftArrayIndex]) {
+                    inputs[currentInputIndex] = leftArray[rightArrayIndex];
+                    rightArrayIndex++;
                 }else {
-                    inputs[currentInputIndex] = rightArray[j];
-                    j++;
+                    inputs[currentInputIndex] = rightArray[leftArrayIndex];
+                    leftArrayIndex++;
                 }
             }
     }
